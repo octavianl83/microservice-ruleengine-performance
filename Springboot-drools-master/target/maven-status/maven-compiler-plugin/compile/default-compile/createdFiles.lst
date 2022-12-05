@@ -1,0 +1,5 @@
+com\msi\controller\ProductController.class
+com\msi\service\ProductService.class
+com\msi\model\Customer.class
+com\msi\App.class
+com\msi\model\Product.class
