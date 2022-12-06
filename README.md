@@ -26,11 +26,22 @@ The following spring boot services are present:
   - service-processor1 -> HTTP POST service-processor2
   - ....
 
+## Monolit flow
+* HTTP POST -> service-processor-monolit
+* service-processor-monolit -> HTTP GET on drool
+* service-processor-monolit -> HTTP GET on drool
+* service-processor-monolit -> HTTP GET on drool
+* service-processor-monolit -> HTTP GET on drool
+
 ## Starting the app
 
 * first start the eureka naming server
 * then start all the other apps in random order
 
-# Sending the first request
+## Sending the first request
 * monolit arhitecture: HTTP POST -> localhost:7000/service-process
 * microservice arhitecture: HTTP POST -> localhost:7100/service-process1
+
+## Performance numbers
+* microservice arhitecture -> 200 requests / second and 40 ms request duration time
+* monolit arhitecture -> 3000 requests / second and 2 ms request duration time
