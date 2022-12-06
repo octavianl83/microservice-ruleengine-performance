@@ -42,6 +42,28 @@ The following spring boot services are present:
 * monolit arhitecture: HTTP POST -> localhost:7000/service-process
 * microservice arhitecture: HTTP POST -> localhost:7100/service-process1
 
+## JSON body
+
+{
+   "tenant":{
+      "tenantType":"tenantType1",
+      "tenantId":"tenant1",
+      "tenantFlow":"tenantFlow1",
+      "tenantDB":"tenantDB1",
+      "tenantDbSchema":"tenantDbSchema1"
+   },
+   "messageType":"CreditCard",
+   "messageContent":{
+      "cardNumber":"1234123412341234",
+      "ownerName":"John Doe",
+      "expireMonth":"07",
+      "expireYear":"2025",
+      "securityCode":"123",
+      "currency":"EUR",
+      "amount":"205.73"
+   }
+}
+
 ## Performance numbers
 * microservice arhitecture -> 200 requests / second and 40 ms request duration time
 * monolit arhitecture -> 3000 requests / second and 2 ms request duration time
