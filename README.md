@@ -16,6 +16,16 @@ The following spring boot services are present:
 * eureka naming server
 * drool microservice app
 
+## Microservice flow
+* each microservice is sending a http request to drool
+* after receiving the response from drool it sends the http request to the next microservice 
+* the last one is sending the last response that will be forwarded to the first microservice
+* Flow: 
+  - HTTP POST -> service-processor1
+  - service-processor1 -> HTTP GET on drool 
+  - service-processor1 -> HTTP POST service-processor2
+  - ....
+
 ## Starting the app
 
 * first start the eureka naming server
