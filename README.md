@@ -9,10 +9,10 @@ There is no special configuration to be done. Just download the repo and start t
 The following spring boot services are present:
 * monolit app that is sending 4 request to drool
 * microservices app:
-** service processor 1
-** service processor 2
-** service processor 3
-** service processor 4
+  - service processor 1
+  - service processor 2
+  - service processor 3
+  - service processor 4
 * eureka naming server
 * drool microservice app
 
