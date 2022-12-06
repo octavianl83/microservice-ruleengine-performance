@@ -2,7 +2,7 @@
 
 The application is intended to test the performance of microservice vs monolit arhitecture using drool as rule engine.
 
-##Configuration
+## Configuration
 
 There is no special configuration to be done. Just download the repo and start the app.
 
@@ -16,7 +16,7 @@ The following spring boot services are present:
 * eureka naming server
 * drool microservice app
 
-##Starting the app
+## Starting the app
 
 * first start the eureka naming server
 * then start all the other apps in random order
